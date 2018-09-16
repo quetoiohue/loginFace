@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/blue"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+    <!--Add Facebook Image-->
+    <ImageView
+        android:id="@+id/imv_fb"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/imgface"
+        android:layout_marginTop="60dp"
+        android:layout_marginBottom="@dimen/edt_magin_bottom"
+        android:layout_marginRight="@dimen/edt_magin_right"
+        android:layout_marginLeft="@dimen/edt_magin_left"
+        />
+    <!--Addd Email text-->
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/edt_email"
+        android:layout_below="@+id/imv_fb"
+        android:layout_marginLeft="@dimen/edt_magin_left"
+        android:layout_marginRight="@dimen/edt_magin_right"
+        android:layout_marginBottom="@dimen/edt_magin_bottom"
+        android:layout_marginTop="@dimen/edt_magin_top"
+        android:background="@drawable/round_border"
+        android:textColor="@color/black"
+        android:padding="@dimen/text_padding"
+        android:hint="@string/hint_email_phone"
+        />
+    <!--Add Password text-->
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/edt_pass"
+        android:layout_below="@+id/edt_email"
+        android:layout_marginLeft="@dimen/edt_magin_left"
+        android:layout_marginRight="@dimen/edt_magin_right"
+        android:layout_marginBottom="@dimen/edt_magin_bottom"
+        android:layout_marginTop="@dimen/edt_magin_top"
+        android:background="@drawable/round_border"
+        android:textColor="@color/black"
+        android:padding="@dimen/text_padding"
+        android:hint="@string/hint_pass"
+        />
+    <!--Add Login Button-->
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/btn_login"
+        android:layout_below="@+id/edt_pass"
+        android:layout_marginLeft="@dimen/edt_magin_left"
+        android:layout_marginRight="@dimen/edt_magin_right"
+        android:layout_marginTop="@dimen/edt_magin_top"
+        android:background="@drawable/round_button"
+        android:textColor="@color/white"
+        android:padding="@dimen/text_padding"
+        android:hint="@string/text_login"
+        android:textAllCaps="false"
+        android:textSize="@dimen/text_size_large"
+        android:textStyle="bold"/>
+    <!--View bottom-->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal"
+        >
+        <!--add Sign up for facebook-->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/btn_sign_up"
+        android:layout_marginLeft="@dimen/edt_magin_left"
+        android:layout_marginRight="@dimen/edt_magin_right"
+        android:gravity="center"
+        android:padding="@dimen/text_padding"
+        android:textColor="@color/white"
+        android:text="@string/text_sign_up"
+        android:textSize="@dimen/text_size_small"
+        />
+        <!--Insert question mark image-->
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:id="@+id/imv_qs"
+            android:layout_marginBottom="@dimen/edt_magin_bottom"
+            android:layout_marginRight="@dimen/edt_magin_right"
+            android:layout_marginLeft="@dimen/edt_magin_left"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/question" />
+    </RelativeLayout>
+</RelativeLayout>
